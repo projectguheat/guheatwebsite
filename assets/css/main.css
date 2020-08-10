@@ -30,6 +30,11 @@ nav{
     padding: 0px 10px;
 }
 
+.uhicauseimg{
+    max-width: 15em;
+    max-height: 30em;
+}
+
 @media (max-width:768px){
     #contents{
         margin:80px 0 0 0;
