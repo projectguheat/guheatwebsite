@@ -1,5 +1,3 @@
-
-// CAROUSEL
 var modalContainer = document.getElementById("modalContainer");
 var img1 = document.getElementById("img1");
 var modalImg1 = document.getElementById("modalImg1");
@@ -30,13 +28,19 @@ span.onclick = function() {
   modalContainer.style.display = "none";
 }
 
-
-
-// DATA DOWNLOAD
-// var text = [text1,text2,text3]
-// text.forEach(function(el) {
-//     var div = document.createElement("div");
-//     div.className = "finalBlock";
-//     div.innerHTML = el;
-//     document.body.appendChild(div);
-// });
+function openTab(evt, tab){
+    var i, tabContentContainer, tabButtons;
+    
+    tabContentContainer = document.getElementsByClassName("tabContentContainer");
+    for (i=0; i < tabContentContainer.length; i++){
+        tabContentContainer[i].style.display = "none";
+    }
+    
+    tabButtons = document.getElementsByClassName("tab");
+    for (i=0; i < tabButtons.length; i++){
+        tabButtons[i].className = tabButtons[i].className.replace(" activeTab", "");
+    }
+    
+    document.getElementById(tab).style.display = "block";
+    evt.currentTarget.className += " activeTab";
+}
