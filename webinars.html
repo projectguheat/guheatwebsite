@@ -21,8 +21,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mx-auto nav-fill w-75">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">About</a>
@@ -39,7 +39,7 @@
                             <a class="nav-link" href="data.html">Data</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="webinars.html">Webinars</a>
+                            <a class="nav-link" href="webinars.html">Webinars</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -49,114 +49,999 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <br>
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-5 lg-12 text-center bg-light">
-                <div class="col-md-10 p-lg-10 mx-auto">
-                    <h2>Project GUHeat Webinars</h2>
-                    <h3>HEATS UP</h3>
-                    <p>HEATS UP is a series of webinars conducted by the Project GUHeat from July to August 2020. </p>
-                </div>
+        <main id="contentsNoSideNav">
+            <img src="assets/img/webinars/header.png" id="webinarHead">
+            <div id="tabContainer">
+                <button class="tab activeTab" onClick="openTab(event, 'session1')">SESSION 1:<br>NATIONAL</button>
+                <button class="tab" onClick="openTab(event, 'session2')">SESSION 2:<br>ILOILO CITY</button>
+                <button class="tab" onClick="openTab(event, 'session3')">SESSION 3:<br>BAGUIO CITY</button>
+                <button class="tab" onClick="openTab(event, 'session4')">SESSION 4:<br>DAVAO CITY</button>
+                <button class="tab" onClick="openTab(event, 'session5')">SESSION 5:<br>QUEZON CITY</button>
+                <button class="tab" onClick="openTab(event, 'session6')">SESSION 6:<br>MANDAUE CITY</button>
+                <button class="tab" onClick="openTab(event, 'session7')">SESSION 7:<br>CEBU CITY</button>
+                <button class="tab" onClick="openTab(event, 'session8')">SESSION 8:<br>ZAMBOANGA CITY</button>                
             </div>
             
+            <div id="session1" class="tabContentContainer">
             
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-5 lg-12 bg-light">
-                <div class="row">
-                    <div class="col-md-8 p-lg-8 my-auto"> 
-                        <h1>National Webinar</h1>
-                        <h2>Presentation 1</h2>
-                        <h3>Topic</h3>
-                        <h4>Presenter</h4>
-                        <h5>Position</h5>
-                    </div>
-                
-                    <div class="col-md-4 p-lg-4 my-auto">
-                        
-                        
-                        <iframe width="560" height="315" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-                    </div>
-                </div>
-
-            </div>
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-5 lg-12 bg-light">
-                <div class="row">
-                    <div class="col-md-8 p-lg-8 my-auto"> 
-                        <h1>National Webinar</h1>
-                        <h2>Presentation 1</h2>
-                        <h3>Topic</h3>
-                        <h4>Presenter</h4>
-                        <h5>Position</h5>
-                    </div>
-                
-                    <div class="col-md-4 p-lg-4 my-auto">
-                        
-                        
-                        <iframe width="560" height="315" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-                    </div>
-                </div>
-
-            </div>
-            
-            <hr class="featurette-divider">
-            <!-- <main class="container bg-dark" >
-                <div class="jumbotron">
-                    <h2>Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities </h2>
-                    <h3>(Project GUHeat)</h3>
-                    <p> The Geospatial Assessment</p>
-                </div>
-                <div class="jumbotron">
-                    <h2>Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities </h2>
-                    <h3>(Project GUHeat)</h3>
-                    <p> The Geospatial Assessment</p>
-                </div> -->
-            
-        </main>
-        <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4 bg-light">
-            <div class="container-fluid text-center text-md-left">
-                <div class="row">
-                    <div class="col-md-4 mt-md-0 mt-3">
-                        <h5 class="text-uppercase" style="margin: 0px 20px 0px 20px;">GEOSPATIAL ASSESSMENT AND MODELLING OF URBAN HEAT ISLANDS IN PHILIPPINE CITIES</h5>
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>WHAT IS PROJECT GUHEAT ABOUT?</b></div>
                         <br>
-                        <p style="margin: 0px 20px 0px 20px; font-size: 14px;">Project GUHeat is a project funded and monitoried by the Department of Science and Technology - Philippine Council for Industry, Energy and Emerging Technology Research and Development (DOST-PCIEERD) and implemented by the University of the Philippines - Training Center for Applied Geodesy and Photogrammetry (UP-TCAGP)</p>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none pb-3">
-                    <div class="col-md-4 mb-md-0 mb-3">
-                        <div class="row d-flex align-items-center justify-content-center">
-                            <img style="max-width: 3em; max-height: 4em;" src="assets/img/logo/GUHeat.png">
-                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/PCIEERD_bg.png">
-                            <img style="max-width: 4em; max-height: 5em;" src="assets/img/logo/UPD_bg.png">
-                            <img style="max-width: 3em; max-height: 4em;" src="assets/img/logo/TCAGP_bg.png">
-                            <img style="max-width: 7em; max-height: 4em;" src="assets/img/logo/NEC_bg.png">
-                            
-                        </div>
-                        <div class="row d-flex align-items-center justify-content-center">
-                                <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/ADZU_bg.png">
-                                <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UC_bg.png">
-                                <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/USC_bg.png">
-                                <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPCEBU_bg.png">
-                                <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPM_bg.png">
-                                <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPV_bg.png">
-                        </div>
-                        <div class="row d-flex align-items-center justify-content-center">
-                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/PAGASA_bg.png">
-                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/DHSUD_bg.png">
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Dr. Ariel C. Blanco<br>
+                                Project Leader, Project GUHeat
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-md-0 mb-3">
-                        <h5 class="text-uppercase">Contact Information</h5>
-                        <ul class="list-unstyled">
-                            <li>Address: RM 420 Junio Hall, National Engineering Center, UP Diliman, Quezon City</li>
-                            <li>Email: projectguheat@gmail.com</li>
-                            <li>Check us on:</li>
-                            <a href="https://www.facebook.com/tagaguheat"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-                            <a href="https://www.youtube.com/channel/UC3D-iWnWSEvXxpXz-1hWb1A"><i id="social-yt" class="fa fa-youtube-square fa-3x social"></i></a>
-                        </ul>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div> 
+
+                <hr style="border-color:white">
+
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>URBAN HEAT ISLANDS IN THE PHILIPPINE CONTEXT</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Mr. Alvin Baloloy<br>
+                                Senior SRS, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>PREDICTING LST USING VEGETATION, BUILT-UP, WATER 
+                        AND OTHER FACTORS THROUGH OLS AND RK MODELS</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. John Emmanuel Escoto<br>
+                                SRS I, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                 
+                <hr style="border-color:white">
+                 
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>CREATING A HIGH-RESOLUTION LAND SURFACE TEMPERATURE MAP</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                For. Reginald Jay Argamosa<br>
+                                Machine Learning Specialist, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>USE OF A MESOSCALE MODEL (WRF) TO MAP URBAN HEAT 
+                        ISLAND OVER A REGIONAL AREA</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Ronald Gil Joy Bilang<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+         
+            </div>
+            
+            <div id="session2" class="tabContentContainer">
+
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>THE “WHATS” AND THE “WHYS”: UNDERSTANDING THE URBAN 
+                        HEAT ISLAND (UHI) PHENOMENON IN ILOILO CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. John Andrew Cruz<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+    
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>ILOILO CITY GOVERNMENT INITIATIVES IN ADDRESSING URBAN HEAT</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Mr. Jose Roni S.J. Peñalosa<br>
+                                CPD Coordinator, Iloilo City Gov
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>THE “HOWS” AND THE “WHAT IFS”: URBAN HEAT ISLAND (UHI)
+                        MITIGATION STRATEGIES FOR A COOLER ENVIRONMENT</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. John Andrew Cruz<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>PROJECT GUHEAT PRODUCTS FOR UHI MAPPING AND MONITORING</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Justine Ace Santos<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
                     </div>
                 </div>
             </div>
-            <div class="container text-center py-3">Project GUHeat    </div>
-        </footer>
+        
+            <div id="session3" class="tabContentContainer">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>CHARACTERIZATION OF URBAN HEAT ISLAND (UHI) PHENOMENON
+                        IN BAGUIO CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. John Andrew Cruz<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                
+                <hr style="border-color:white">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>THE FUTURE OF URBANIZATION SCENARIOS: IMPACTS AND MITIGATION</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Mr. Alvin Baloloy<br>
+                                Senior SRS, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                
+                <hr style="border-color:white">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>PROJECT GUHEAT: THE UC EXPERIENCE</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Nathaniel Vincent Lubrica<br>
+                                Project Staff, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>LOCAL GOVERNMENT INITIATIVES IN ADDRESSING URBAN HEAT</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Ms. Antonette Anaban, EnP.<br>
+                                Asst. CPD Coordinator, Baguio City Gov
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>BAGUIO CITY GUHEAT OUTPUT MAPS</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Raymund Sta.Ana<br>
+                                Senior SRS, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div id="session4" class="tabContentContainer">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>CHARACTERIZATION OF URBAN HEAT ISLAND (UHI) PHENOMENON 
+                        IN DAVAO CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Myla Ross M. Tinoy<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>SUMMARY OF SIMULATIONS IN DAVAO CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Ronald Gil Joy Bilang<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>SUSTAINABLE HEAT RELATED STRATEGIES IN THE COMPREHENSIVE 
+                        LAND USE PLAN 2019-2028</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Ivan C. Cortez, EnP.<br>
+                                OIC, CPDO, Davao City Gov
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>POLICY RECOMMENDATIONS FOR THE EXECUTIVE AND LEGISLATIVE 
+                        BRANCH ON MITIGATING URBAN HEAT ISLAND EFFECT</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Ms. Chinkie Peliño-Golle<br>
+                                Exec. Director, Interfacing Devt. Interventions for Sustainability
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>CRUCIAL ROLE OF ARCHITECTS, ENGINEERS AND ENVIRON. 
+                        PLANNERS IN IMPROVING THE URBAN GREENERY SITUATION IN DAVAO CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Ar. Ryan C. Songcayauon, UAP<br>
+                                Asst.Prof., Dept. of Arch. - UP Mindanao
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>PRESENTATION OF OUTPUT MAPS</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Raymund Sta.Ana<br>
+                                Senior SRS, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="session5" class="tabContentContainer">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>UNDERSTANDING THE THERMAL ENVIRONMENT CONDITION OF QUEZON CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Jennieveive Babaan <br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>DIURNAL TEMPERATURE OF MATERIALS</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Ian Estacio<br>
+                                Researcher, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>THERMAL EFFECTS OF URBAN GREENINGS IN AN URBAN MICROCLIMATE IN QUEZON CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Jennieveive Babaan<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>QUEZON CITY URBAN GREENING PLAN</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                L. Ar. Irene Morales<br>
+                                Spec. Ops. Officer II, QC Parks Department
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>PROJECT GUHEAT MAPS AND OTHER UHI-RELATED PRODUCTS</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Justine Ace Santos<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+
+            </div> 
+            
+            <div id="session6" class="tabContentContainer">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>SPATIO-TEMPORAL ANALYSIS OF URBAN HEAT ISLAND IN MANDAUE CITY, PHILIPPINES</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Arnold Jesfel Rejuso<br>
+                                SRS I, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>GREEN BUILDING ORDINANCE OF MANDAUE CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Crystal Comon<br>
+                                OIC, Office of the Building Official
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>MANDAUE LGU: LOCAL PUBLIC TRANSPORT ROUTE PLAN</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Atty. Christie Marie Alga <br>
+                                Admin. Unit Head, CPDO, Mandaue City Gov
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>IMPACT OF UHI ON WATER AND ELECTRICITY CONSUMPTION</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Arnold Jesfel Rejuso<br>
+                                SRS I, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>MANDAUE LGU: MANDAUE BIKE LANE</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Ar. Charlene Cañete<br>
+                                Ar. II, Planning Unit, CPDO, Mandaue City Gov
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>IMPACTS OF GREEN OPEN-SPACES AND GREEN ROOFING ON UHI IN MANDAUE CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Arnold Jesfel Rejuso<br>
+                                SRS I, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>MANDAUE LGU: AIR QUALITY IN MANDAUE CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Vircel Martel<br>
+                                Pollution Control & Management Unit, CENRO, Mandaue City Gov
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>PRESENTATION OF OUTPUT MAPS</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Justine Ace Santos<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+                                
+            </div>
+                      
+            <div id="session7" class="tabContentContainer">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>URBAN HEAT ISLAND CHARACTERIZATION IN CEBU CITY, PHILIPPINES</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Dr. Roland Emerito Otadoy<br>
+                                Project Staff, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>THERMAL EFFECTS OF TREES AND GREEN ROOFING IN 
+                        URBAN AREAS OF CEBU CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Marx Sandino Pelone<br>
+                                SRS I, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>PROJECT GUHEAT PRODUCTS FOR UHI MAPPING AND MONITORING</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Raymund Sta.Ana<br>
+                                Senior SRS, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>  
+            
+            </div>
+            
+            <div id="session8" class="tabContentContainer">
+            
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>BRIEF DISCUSSION ON UHI AND UHI CHARACTERIZATION OF ZAMBOANGA CITY</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Rengie P. Bagares<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>SPATIAL AND TEMPORAL ANALYSIS OF MONTHLY WATER CONSUMPTION AND LST 
+                        DERIVED USING LANDSAT 8 AND MODIS DATA</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Rengie P. Bagares<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>LOCAL GOVERNMENT INITIATIVES IN ADDRESSING URBAN HEAT</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                L. Ar. Rizamay Sta. Teresa-Basing<br>
+                                Asst. City General Services Officer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+            
+                <hr style="border-color:white">
+                
+                <div class="tabContent">
+                    <div class="vidDesc">
+                        <div class="pres"><b>PRESENTATION OF OUTPUT MAPS AND SOFTWARE DEMO</b></div>
+                        <br>
+                        <div class="presCard">
+                            <div class="presCardLeft">
+                                <b>Presenter:<br>
+                                Position:</b>
+                            </div>
+                            <div class="presCardRight">
+                                Engr. Justine Ace Santos<br>
+                                SRS II, Project GUHeat
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDiv">
+                        <iframe allowfullscreen src="https://www.youtube.com/embed/WHkpmRhAbMU"></iframe>
+                    </div>
+                </div>
+          
+            </div>
+
+            <hr class="featurette-divider">
+            </main>
+        </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 bg-light">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+    
+            <!-- Grid row -->
+            <div class="row">
+        
+                <!-- Grid column -->
+                <div class="col-md-4 mt-md-0 mt-3">
+        
+                    <!-- Content -->
+                    <h5 class="text-uppercase" style="margin: 0px 20px 0px 20px;">GEOSPATIAL ASSESSMENT AND MODELLING OF URBAN HEAT ISLANDS IN PHILIPPINE CITIES</h5>
+                    <p style="margin: 0px 20px 0px 20px; font-size: 14px;">Project GUHeat is a project funded and monitoried by the Department of Science and Technology - Philippine Council for Industry, Energy and Emerging Technology Research and Development (DOST-PCIEERD) and implemented by the University of the Philippines - Training Center for Applied Geodesy and Photogrammetry (UP-TCAGP)</p>
+        
+                </div>
+                <!-- Grid column -->
+        
+                <hr class="clearfix w-100 d-md-none pb-3">
+        
+                <!-- Grid column -->
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <img style="max-width: 3em; max-height: 4em;" src="assets/img/logo/GUHeat.png">
+                        <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/PCIEERD_bg.png">
+                        <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/TCAGP_bg.png">
+                        <img style="max-width: 7em; max-height: 4em;" src="assets/img/logo/NEC_bg.png">
+                        <img style="max-width: 4em; max-height: 5em;" src="assets/img/logo/UPD_bg.png">
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-center">
+
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/ADZU_bg.png">
+
+
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UC_bg.png">
+
+
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/USC_bg.png">
+
+
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPCEBU_bg.png">
+
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPM_bg.png">
+
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPV_bg.png">
+        
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/PAGASA_bg.png">
+                        <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/DHSUD_bg.png">
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-md-0 mb-3">
+
+                    <h5 class="text-uppercase">Contact Information</h5>
+            
+                    <ul class="list-unstyled">
+                        <li>Address: RM 420 Junio Hall, National Engineering Center, UP Diliman, Quezon City</li>
+                        <li>Email: projectguheat@gmail.com</li>
+                        <li>Check us on:</li>
+                        <a href="https://www.facebook.com/projectguheat"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                        <a href="https://youtube.com/projectguheat"><i id="social-yt" class="fa fa-youtube-square fa-3x social"></i></a>
+                        <a href="mailto:projectguheat@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                    </ul>
+            
+                </div>
+            </div>
+        </div>
+        <div class="container text-center py-3">Project GUHeat    </div>
+    </footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
