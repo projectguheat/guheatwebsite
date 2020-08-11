@@ -42,6 +42,11 @@ nav{
     }
 }
 
+#contentsNoSideNav{
+    margin:80px auto;
+    width:90%;
+}
+
 /* Side Nav
 -------------------------------------------------- */
 
@@ -252,6 +257,177 @@ nav{
     height:0;
     width:0;
 }
+
+/* WEBINARS CONTAINERS
+-------------------------------------------------- */
+
+#webinarHead{
+    width:100%;
+    margin:0 auto; 
+}
+
+#tabContainer{
+    height:3.5vw;
+    min-height:30px;
+    display:flex;
+    background-color:black;
+    border:1px solid black;
+    border-bottom:none;
+}
+
+.tab{
+    overflow:hidden;
+    font-family:Lucida Console, Monaco, monospace;
+    font-size:0.9vw;  
+    background-color:#999;
+    margin-top:0.5vw;
+    border:none;
+    border-top:1px solid black;
+    border-right:1px solid black;
+    border-radius:5px 5px 0 0;
+    width:11%;
+}
+
+.tab:hover{
+    background-color:#ccc;
+}
+
+.tab.activeTab{
+    background-color:#333;
+    border-bottom:none;
+    color:white;
+    outline:none;
+}
+
+.tabContentContainer{
+    display:none;
+    background-color:#333;
+    border:1px solid black;
+    border-top:none;
+}
+
+.tabContent{
+    display:flex;
+    height:37vw;
+}
+
+.vidDesc{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    color:white;
+    width:40%;
+    justify-content:center;
+    align-items:center;
+    padding-left:3vw;
+}
+
+.pres{
+    font-family:Lucida Console, Monaco, monospace;
+    font-size:1.5vw;
+    text-align:center;
+}
+
+.presCard{
+    width:85%;
+    display:flex;
+    flex-direction:row;
+
+}
+
+.presCardLeft{
+    width:20%;
+    font-size:1vw;
+}
+
+.presCardRight{
+    width:80%;
+    text-align:right;
+    font-size:1vw;
+}
+
+.vidDiv{
+    display:flex;
+    background-image:url("../img/webinars/screen.png");
+    background-size:85% 85%;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:60%;
+    align-items:center;
+    justify-content:center;
+}
+
+.vidDiv > iframe{
+    margin-top:1.5vw;
+    margin-left:0.3vw;
+    width:41vw;
+    height:22.5vw;
+    border:none;
+}
+
+@media (max-width: 1100px){
+    #tabContainer{
+        height:6vw;
+    }
+   .tab{
+        font-size:1.2vw;
+    }
+    .tabContentContainer{
+        padding-bottom:2vw;
+    }
+    .tabContent{
+        flex-direction:column;
+        align-items:center;
+        height:70vw;
+    }
+    .vidDesc{
+        margin-top:2vw;
+        width:100%;
+        order:2;
+    }
+    .pres{
+        font-size:2.5vw;
+    }
+    .presCardLeft, .presCardRight{
+        font-size:2vw;
+    }
+    .vidDiv{
+        margin-top:2vw;
+        width:100%;
+        order:1;
+        background-image:none;
+    }
+    .vidDiv > iframe{
+        width:80vw;
+        height:45vw;
+    }
+}
+
+@media (max-width: 768px){
+    .tabContent{
+        flex-direction:column;
+        align-items:center;
+        height:88vw;
+    }
+    .tab{
+        font-size:1.5vw;
+    }
+    #tabContainer{
+        height:12vw;
+    }
+    .pres{
+        font-size:4vw;
+    }
+    .presCardLeft, .presCardRight{
+        font-size:3vw;
+    }
+}
+
+#session1{
+    display:block;
+}
+
+
 
 
 /* CUSTOMIZE THE CAROUSEL
