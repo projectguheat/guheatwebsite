@@ -502,7 +502,7 @@ nav{
     border-top:1px solid black;
     border-right:1px solid black;
     border-radius:5px 5px 0 0;
-    width:11%;
+    width:17%;
 }
 
 .tab:hover{
@@ -774,6 +774,7 @@ nav{
   h1 {font-size:1.5rem;} /*1rem = 16px*/
 }
  
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
   h1 {font-size:2rem;} /*1rem = 16px*/
@@ -789,3 +790,68 @@ nav{
   h1 {font-size:3rem;} /*1rem = 16px*/    
 }
 
+.dataTab{
+    overflow:hidden;
+    font-family:Lucida Console, Monaco, monospace;
+    font-size:0.9vw;  
+    background-color:#999;
+    margin-top:0.5vw;
+    border:none;
+    border-top:1px solid black;
+    border-right:1px solid black;
+    border-radius:5px 5px 0 0;
+    width:17%;
+}
+
+.tabDataContentContainer{
+    display:none;
+    background-color:#333;
+    border:1px solid black;
+    border-top:none;
+    padding-bottom:1vw;
+    /* padding-top: 1wv; */
+}
+
+.tabDataContent{
+    display:flex;
+    padding-top: 1vw;
+    /* height:30vw; */
+}
+.downloadinfo{
+    display:flex;
+    flex-direction:column;
+    /* overflow:hidden; */
+    color:white;
+    width:50%;
+    /* justify-content:center;
+    align-items:center; */
+    padding-left:2vw;
+    padding-right:2vw;
+    font-family:Lucida Console, Monaco, monospace;
+    font-size:1w;
+}
+#toolsTab{
+    display:block;
+}
+@media (max-width: 1100px){
+    .tabDataContent{
+        flex-direction:column;
+        align-items:center;
+        /* display:flex; */
+        
+        /* height:70vw; */
+    }
+    .downloadinfo{
+        font-size:2.5vw;
+
+    }
+}
+
+@media (max-width: 768px){
+    .tabDataContent{
+        flex-direction:column
+        align-items:center;
+        /* height:88vw; */
+    }
+
+}
