@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title> Project GUHeat</title>
+        <meta name="description" content="This is the official site of Project GUHeat, a project funded by DOST-PCIEERD">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark py-1">
+                <img style="max-width:2em" src="assets/img/logo/GUHeat.png">
+                <a class="navbar-brand" href="#" style="margin: 0px 10px 0px 10px">GUHeat</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto nav-fill w-75">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">About</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="abtproj.html">About the Project</a>
+                                <a class="dropdown-item" href="team.html">Research Team</a>
+                                <a class="dropdown-item" href="univ.html">Partner Universities</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studyareas.html">Study Areas</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="hub.html">Data Hub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="webinars.html">Webinars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main id="contentsNoSideNav">
+            
+            <div id="tabContainer">
+                <button class="tab activeTab" onClick="openDataTab(event, 'toolsTab')">TOOLS</button>
+                
+                <button class="tab" onClick="openDataTab(event, 'lstTab')">RASTERS<br>Land Surface Temperature</button>
+                <button class="tab" onClick="openDataTab(event, 'envimetTab')">RASTERS<br>ENVImet Outputs</button>
+                <button class="tab" onClick="openDataTab(event, 'vectorsTab')">VECTORS<br>Urban Layout Shapefiles</button>
+                <button class="tab" onClick="openDataTab(event, 'articlesTab')">DOCUMENTS<br>Published Articles</button>
+                
+                <button class="tab" onClick="openDataTab(event, 'mapsTab')">OUTPUT MAPS</button>
+             
+            </div>
+            
+            <div id="toolsTab" class="tabDataContentContainer">
+                
+                <div class="tabDataContent" style="text-align:justify;">
+                        
+                    <!-- <div class="row"> -->
+                        <div class="col-md-5 downloadinfo my-auto">
+                            <br>
+                            <h2>GUHeat Engine</h2>
+                            <br>
+                            <p>GUHeat Engine is a Google Earth Engine (GEE) App developed by Project GUHeat. 
+                                The app automates the process of generating LST from Landsat Images in the Philippines.
+                                You can access the this GEE app through the link below.
+                            </p>
+                            <p><a href="https://projectguheat.users.earthengine.app/view/lst-landsat-v2">GUHeat Engine</a></p>
+                            
+                        </div>
+                        
+                        <div class="col-md-7 d-flex align-items-center justify-content-center">
+                            <br>
+                            <img src="assets/img/datahub/gee1.PNG" style="width: 80%">
+                        </div>
+
+                </div> 
+                <hr style="border-color:white">
+                <div class="tabDataContent" style="text-align:justify;">
+                        
+ 
+                    <div class="col-md-5 downloadinfo mx-auto">
+                        <br>
+                        <h2>GUHeat Toolbox</h2>
+                        <br>
+                        <p>
+                            This toolbox is a QGIS plugin developed by Project GUHeat. 
+                            One of its tools is to process LST from downloaded Landsat Images with the use of QGIS software.
+                            You can download the toolbox through the link below.
+                        </p>
+                        <p><a href="data/tools/guheat_tbx.zip">GUHeat Toolbox</a></p>
+                        <br>
+                        
+                    </div>
+                    <div class="col-md-7 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/datahub/guheatoolbox1.PNG" style="width: 50%;">
+                    </div>
+
+                </div>
+            </div>
+            <div id="lstTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+                <div class="tabDataContent downloadinfo">
+                    
+                    <h1>ENVImet</h1>
+                    <div class="row d-flex">
+                        
+                        <div class="select col-md-4">
+                            <select id="selectYear" name="year" class="custom-select">
+                                <option selected>Year</option>
+                                <option value="1989">1989</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+    
+                            </select>   
+                        </div>
+                        <div class="select col-md-4">
+                            <select id="selectPathRow" name="pathrow" class="custom-select">
+                                <option selected>Path and Row</option>
+                                <option value=">116050">116050</option>
+                                <option value="116049">116049</option>
+                                <option value="113053">113053</option>
+                                <option value="114053">114053</option>
+                                <option value="112055">112055</option>
+                                <option value="114055">114055</option>
+                            </select>  
+                        </div>
+                        
+                        <button type="button" class="btn btn-secondary" onClick="searchLST(event, 'lstCon')">Search</button>
+                    </div>
+                    
+                </div>
+                <div id="lstCon" class="tabDataContent downloadinfo">
+                </div>
+      
+
+            </div>
+            
+            <div id="envimetTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+            
+                <div class="tabDataContent downloadinfo">
+                    
+                    <h1>ENVImet</h1>
+                    <div class="row d-flex">
+                        
+                        <div class="select col-md-4">
+                            <select id="selectCity1" name="city" class="custom-select">
+                                <option selected>City</option>
+                                <option value="baguiocity">Baguio City</option>
+                                <option value="cebucity">Cebu City</option>
+                                <option value="davaocity">Davao City</option>
+                                <option value="iloilocity">Iloilo City</option>
+                                <option value="mandauecity">Mandaue City</option>
+                                <option value="quezoncity">Quezon City</option>
+                                <option value="zamboangacity">Zamboanga City</option>
+                            </select>  
+                        </div>
+                        
+                        <button type="button" class="btn btn-secondary" onClick="searchCity1(event, 'envimetCon')">Search</button>
+                    </div>
+                    
+                </div> 
+                <div id="envimetCon" class="tabDataContent downloadinfo">
+                </div>
+            </div>
+            <div id="vectorsTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>Baguio City Urban Layout Shapefiles</h4>
+                        <!-- <h6 class="text-muted">A. Baloloy, R. R. Sta. Ana, J. A. Cruz, A. Blanco, 2, N. V. Lubrica, C. J. Valdez, E. P. Cajucom</h6> -->
+                        
+                        <h6><a href="data/layers/vectors/BaguioCity.zip">Download ZIP File</a></h6>
+                    </div>
+                </div> 
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>Cebu City City Urban Layout Shapefiles</h4>
+                        <!-- <h6 class="text-muted">A. Baloloy, R. R. Sta. Ana, J. A. Cruz, A. Blanco, 2, N. V. Lubrica, C. J. Valdez, E. P. Cajucom</h6> -->
+                        
+                        <h6><a href="#">Download ZIP File</a></h6>
+                    </div>
+                </div> 
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>Davao City Urban Layout Shapefiles</h4>
+                        <!-- <h6 class="text-muted">A. Baloloy, R. R. Sta. Ana, J. A. Cruz, A. Blanco, 2, N. V. Lubrica, C. J. Valdez, E. P. Cajucom</h6> -->
+                        
+                        <h6><a href="data/layers/vectors/DavaoCity.zip">Download ZIP File</a></h6>
+                    </div>
+                </div> 
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>Iloilo City Urban Layout Shapefiles</h4>
+                        <!-- <h6 class="text-muted">A. Baloloy, R. R. Sta. Ana, J. A. Cruz, A. Blanco, 2, N. V. Lubrica, C. J. Valdez, E. P. Cajucom</h6> -->
+                        
+                        <h6><a href="data/layers/vectors/IloiloCIty.zip">Download ZIP File</a></h6>
+                    </div>
+                </div> 
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>Mandaue City Urban Layout Shapefiles</h4>
+                        <!-- <h6 class="text-muted">A. Baloloy, R. R. Sta. Ana, J. A. Cruz, A. Blanco, 2, N. V. Lubrica, C. J. Valdez, E. P. Cajucom</h6> -->
+                        
+                        <h6><a href="data/layers/vectors/MandaueCity.zip">Download ZIP File</a></h6>
+                    </div>
+                </div> 
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>Quezon City Urban Layout Shapefiles</h4>
+                        <!-- <h6 class="text-muted">A. Baloloy, R. R. Sta. Ana, J. A. Cruz, A. Blanco, 2, N. V. Lubrica, C. J. Valdez, E. P. Cajucom</h6> -->
+                        
+                        <h6><a href="data/layers/vectors/QuezonCity.zip">Download ZIP File</a></h6>
+                    </div>
+                </div> 
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>Zamboanga City Urban Layout Shapefiles</h4>
+                        <!-- <h6 class="text-muted">A. Baloloy, R. R. Sta. Ana, J. A. Cruz, A. Blanco, 2, N. V. Lubrica, C. J. Valdez, E. P. Cajucom</h6> -->
+                        
+                        <h6><a href="#">Download ZIP File</a></h6>
+                    </div>
+                </div> 
+                <!-- <div class="tabDataContent" style="height: 30vw;">
+                    <div class="downloadinfo">
+                        <h1>Vectors</h1>
+                        <div class="row">
+                            <div class="select col-md-4">
+                                <select name="city" class="custom-select">
+                                    <option selected>City</option>
+                                    <option value="#">Baguio City</option>
+                                    <option value="#">Cebu City</option>
+                                    <option value="#">Davao City</option>
+                                    <option value="#">Iloilo City</option>
+                                    <option value="#">Mandaue City</option>
+                                    <option value="#">Iloilo City</option>
+                                </select>  
+                            </div>
+                            <button type="button" class="btn btn-secondary">Search</button>  
+                        </div>
+                    </div>
+                </div>  -->
+            </div>
+            <div id="articlesTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+                
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>SPATIOTEMPORAL MULTI-SATELLITE BIOPHYSICAL DATA ANALYSIS OF THE EFFECT OF URBANIZATION ON LAND SURFACE AND AIR TEMPERATURE IN BAGUIO CITY, PHILIPPINES</h4>
+                        <h6 class="text-muted">A. Baloloy, R. R. Sta. Ana, J. A. Cruz, A. Blanco, 2, N. V. Lubrica, C. J. Valdez, E. P. Cajucom</h6>
+                        <!-- <p>Urbanization can be observed through the occurrence of land-use changes as more land is being transformed and developed for urban use. One of the Philippine cities with high rate of urbanization is Baguio City, known for having a subtropical highland climate. To understand the spatiotemporal relationship between urbanization and temperature, this study aims to analyze the correlation of urban extent with land surface and air temperature in Baguio City using satellite-based built-up extents, land surface temperature (LST) maps, and weather station-recorded air temperature data. Built-up extent layers were derived from three satellite images: Landsat, RapidEye and PlanetScope. Land-use land cover (LULC) maps were generated from Landsat images using biophysical indices such as Normalized Difference Vegetation Index (NDVI) and Normalized Difference Built-up Index (NDBI); while RapidEye and PlanetScope built-up extent maps were generated by applying the visible green-based built-up index (VgNIR-BI). Mean LST values from 1988 to 2018 during the dry and wet seasons were calculated from the Landsat-retrieved surface temperature layers. The result of the study shows that the increase in the built-up extent significantly intensified the LST during the dry season which was observed in all satellite data-derived built-up maps: RapidEye+PlanetScope (2012-2018; r = 0.88), Landsat 8 (2012-2018; r = 0.63) and Landsat 5,7,8 (1988-2018; r = 0.61). The main LST hotspots were detected inside the Central Business District where it expanded gradually from year 1998 (43ha) to 2011 (83ha), but have increased extensively within the years 2014 to 2019 (305 ha). On average, 98.5% of the hotspots detected from 1995 to 2019 are within the equivalent built-up area.</p> -->
+                        <h6><a href="data/docs/guheatArticleISPRSArchives2019Baloloyetal.pdf">Download PDF</a></h6>
+                    </div>
+                </div> 
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>URBAN EFFECTS ON LAND SURFACE TEMPERATURE IN
+                            DAVAO CITY, PHILIPPINES</h4>
+                        <h6 class="text-muted">M. M. Tinoy, *, A. U. Novero, K. P. Landicho, A. B. Baloloy, A. C. Blanco</h6>
+
+                        <h6><a href="data/docs/guheatArticleISPRSArchives2019Tinoyetal.pdf">Download PDF</a></h6>
+                    </div>
+                </div> 
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>LINEAR SPECTRAL UNMIXING OF SENTINEL-3 IMAGERY FOR URBAN LAND
+                            COVER - LAND SURFACE TEMPERATURE (LST) ANALYSIS: A CASE STUDY OF
+                            METRO MANILA, PHILIPPINES</h4>
+                        <h6 class="text-muted">C. Cruz, A. C. Blanco, J. Babaan, J. A. Cruz, R. R. Sta. Ana, E. Paringit</h6>
+
+                        <h6><a href="data/docs/guheatArticleISPRSArchives2019CruzCetal.pdf">Download PDF</a></h6>
+                    </div>
+                </div>
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>SPATIOTEMPORAL ANALYSIS OF THE URBAN COOLING ISLAND (UCI) EFFECT
+                            OF WATER SPACES IN A HIGHLY URBANIZED CITY: A CASE STUDY OF
+                            ILOILO RIVER AND ADJACENT WETLANDS</h4>
+                        <h6 class="text-muted">J.A. Cruz, J.A. Santos, J. J. Garcia, A. Blanco, A. D. Moscoso</h6>
+
+                        <h6><a href="data/docs/guheatArticleISPRSArchives2019CruzJetal.pdf">Download PDF</a></h6>
+                    </div>
+                </div>
+                <div class="tabDataContent">
+                    <div class="col-md-12 downloadinfo">
+                        <h4>SPATIO-TEMPORAL ANALYSIS OF URBAN HEAT ISLAND IN
+                            MANDAUE CITY, PHILIPPINES</h4>
+                        <h6 class="text-muted">A. M. Rejuso, A. C. Cortes, A. C. Blanco, C. A. Cruz, J. B. Babaan</h6>
+
+                        <h6><a href="data/docs/guheatArticleISPRSArchives2019Rejusoetal.pdf">Download PDF</a></h6>
+                    </div>
+                </div>
+
+            </div>
+            <div id="mapsTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+            
+                <div class="tabDataContent">
+                    <div class="downloadinfo">
+                        <h1>Output Maps</h1>
+                        <div class="row d-flex">
+                            
+                            <div class="select col-md-4">
+                                <select id="selectCity2" name="city" class="custom-select">
+                                    <option selected>City</option>
+                                    <option value="baguiocity">Baguio City</option>
+                                    <option value="cebucity">Cebu City</option>
+                                    <option value="davaocity">Davao City</option>
+                                    <option value="iloilocity">Iloilo City</option>
+                                    <option value="mandauecity">Mandaue City</option>
+                                    <option value="quezoncity">Quezon City</option>
+                                    <option value="zamboangacity">Zamboanga City</option>
+                                </select>  
+                            </div>
+                            
+                            <button type="button" class="btn btn-secondary" onClick="searchCity2(event, 'mapsCon')">Search</button>
+                            
+                        </div>
+                    </div>
+                </div> 
+                <div id="mapsCon" class="tabDataContent downloadinfo">
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <br>
+                <div id="basemap1" style="width: 100%; height: 600px;"></div>
+            </div>
+        </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 bg-light">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <h5 class="text-uppercase" style="margin: 0px 20px 0px 20px;">GEOSPATIAL ASSESSMENT AND MODELLING OF URBAN HEAT ISLANDS IN PHILIPPINE CITIES</h5>
+                    <br>
+                    <p style="margin: 0px 20px 0px 20px; font-size: 14px;">Project GUHeat is a project funded and monitoried by the Department of Science and Technology - Philippine Council for Industry, Energy and Emerging Technology Research and Development (DOST-PCIEERD) and implemented by the University of the Philippines - Training Center for Applied Geodesy and Photogrammetry (UP-TCAGP)</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <img style="max-width: 3em; max-height: 4em;" src="assets/img/logo/GUHeat.png">
+                        <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/PCIEERD_bg.png">
+                        <img style="max-width: 4em; max-height: 5em;" src="assets/img/logo/UPD_bg.png">
+                        <img style="max-width: 3em; max-height: 4em;" src="assets/img/logo/TCAGP_bg.png">
+                        <img style="max-width: 7em; max-height: 4em;" src="assets/img/logo/NEC_bg.png">
+                        
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-center">
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/ADZU_bg.png">
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UC_bg.png">
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/USC_bg.png">
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPCEBU_bg.png">
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPM_bg.png">
+                            <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/UPV_bg.png">
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/PAGASA_bg.png">
+                        <img style="max-width: 4em; max-height: 4em;" src="assets/img/logo/DHSUD_bg.png">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li>Address: RM 420 Junio Hall, National Engineering Center, UP Diliman, Quezon City</li>
+                        <li>Email: projectguheat@gmail.com</li>
+                        <li>Check us on:</li>
+                        <a href="https://www.facebook.com/tagaguheat"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                        <a href="https://www.youtube.com/channel/UC3D-iWnWSEvXxpXz-1hWb1A"><i id="social-yt" class="fa fa-youtube-square fa-3x social"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center py-3">Project GUHeat    </div>
+    </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/hub.js"></script>
+    </body>
+</html>
