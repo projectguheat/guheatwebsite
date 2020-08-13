@@ -37,7 +37,7 @@ function searchLST(evt, fileTab){
                         <h6>${filesplit2[0]}</h6>
 
                         <h6><a href="${file}" target="_blank">Download File</a></h6>
-                        <button type="button" class="btn btn-info" style="width:50%; height: 30%;">Info</button>
+
                         
                         <br>
                     </div>`
@@ -61,7 +61,7 @@ function searchCity1(evt, fileTab){
                         <h6>${filesplit2[0]}</h6>
 
                         <h6><a href="${file}" target="_blank">Download File</a></h6>
-                        <<button type="button" class="btn btn-info">Info</button>
+
                         <br>
                     </div>`
   });
