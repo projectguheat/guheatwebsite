@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <title> Project GUHeat</title>
+        <link rel="icon" href="assets/img/logo/GUHeat.png">
         <meta name="description" content="This is the official site of Project GUHeat, a project funded by DOST-PCIEERD">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
-        <link rel="icon" href="assets/img/logo/GUHeat.png">
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -93,7 +94,7 @@
                                 The app automates the process of generating LST from Landsat Images in the Philippines.
                                 You can access the this GEE app through the link below.
                             </p>
-                            <p><a href="https://projectguheat.users.earthengine.app/view/lst-landsat-v2">GUHeat Engine</a></p>
+                            <p><a href="https://projectguheat.users.earthengine.app/view/lst-landsat-v2" target="_blank">GUHeat Engine</a></p>
                             
                         </div>
                         
@@ -116,19 +117,62 @@
                             One of its tools is to process LST from downloaded Landsat Images with the use of QGIS software.
                             You can download the toolbox through the link below. 
                         </p>
-                        <p><a href="data/tools/guheat_tbx.zip">GUHeat Toolbox</a></p>
+                        <p><a href="data/tools/guheat_toolbox.zip">GUHeat Toolbox</a></p>
                         <br>
                         
                     </div>
                     <div class="col-md-7 d-flex align-items-center justify-content-center">
                         <img src="assets/img/datahub/guheatoolbox1.PNG" style="width: 50%;">
                     </div>
-
                 </div>
                 <hr style="border-color:white">
-                
+                <div class="tabDataContent" style="text-align:justify;">
+                        
+ 
+                    <div class="col-md-5 downloadinfo mx-auto">
+                        <br>
+                        <h2>GUHeat Mobile App</h2>
+                        <br>
+                        <p>
+                            This app is an android mobile app developed by Project GUHeat's Mobile App Development Specialists,
+                             Jiedy-Ann Canon and Marko Zolo Untalan. It includes some information about the Project and some map layers viewed from a map.
+                             The main features include the Heat Index Calculator and a Thermal Comfort Survey. You may try this by checking it on the Google Play Store.
+                            
+                        </p>
+                        <p><a href="#">GUHeat Mobile App</a></p>
+                        <br>
+                        
+                    </div>
+                    <div class="col-md-7 d-flex align-items-center justify-content-center">
+                        <img src="assets/img/datahub/guheatapp1.jpg" style="width: 20%; margin: 5px;">
+                        <img src="assets/img/datahub/guheatapp2.jpg" style="width: 20%; margin: 5px;">
+                        <img src="assets/img/datahub/guheatapp3.jpg" style="width: 20%; margin: 5px;">
+                    </div>
+                </div>
+                <hr style="border-color:white">
+                <div class="tabDataContent" style="text-align:justify;">
+                        
+ 
+                    <div class="col-md-5 downloadinfo mx-auto">
+                        <br>
+                        <h2>GUHeat E-book</h2>
+                        <br>
+                        <p>
+                            The GUHeat E-book contains detailed informaton about the Project. This also includes several step-by-step guides on our products and the tools
+                            that the project used in processing its outputs.
+                        </p>
+                        <p><a href="#">GUHeat E-book</a></p>
+                        <br>
+                        
+                    </div>
+                    <div class="col-md-7 d-flex align-items-center justify-content-center">
+                        <!-- <img src="assets/img/datahub/guheatapp1.jpg" style="width: 20%; margin: 5px;">
+                        <img src="assets/img/datahub/guheatapp2.jpg" style="width: 20%; margin: 5px;">
+                        <img src="assets/img/datahub/guheatapp3.jpg" style="width: 20%; margin: 5px;"> -->
+                    </div>
+                </div>
             </div>
-            <div id="lstTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+            <div id="lstTab" class="tabDataContentContainer" style="height: 30vw; overflow: auto;">
                 <div class="tabDataContent downloadinfo">
                     
                     <h1>Land Surface Temperature</h1>
@@ -184,20 +228,10 @@
                         </div>
                         
                         <button type="button" class="btn btn-secondary" onClick="searchLST(event, 'lstCon')">Search</button>
-                        
-                    </div>
-                    
-                </div>
-                <div class="row d-flex">
-                    <div id="lstCon" class="tabDataContent downloadinfo">Hello
-                    </div>
-                    <div class="col-md-4 downloadinfo"><img src="assets/img/datahub/pathrow.PNG" style="width: 100%;"></div>
-                </div>
-      
-
-            </div>
-            
-            <div id="envimetTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+                    </div>   
+                </div>    
+            </div>       
+            <div id="envimetTab" class="tabDataContentContainer" style="height: 30vw; overflow: auto;">
             
                 <div class="tabDataContent downloadinfo">
                     
@@ -224,7 +258,7 @@
                 <div id="envimetCon" class="tabDataContent downloadinfo">
                 </div>
             </div>
-            <div id="vectorsTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+            <div id="vectorsTab" class="tabDataContentContainer" style="height: 30vw; overflow: auto;">
                 <div class="tabDataContent">
                     <div class="col-md-12 downloadinfo">
                         <h4>Baguio City Urban Layout Shapefiles</h4>
@@ -280,27 +314,9 @@
                         <h6><a href="data/layers/vectors/ZamboangaCity.zip">Download ZIP File</a></h6>
                     </div>
                 </div>  -->
-                <!-- <div class="tabDataContent" style="height: 30vw;">
-                    <div class="downloadinfo">
-                        <h1>Vectors</h1>
-                        <div class="row">
-                            <div class="select col-md-4">
-                                <select name="city" class="custom-select">
-                                    <option selected>City</option>
-                                    <option value="#">Baguio City</option>
-                                    <option value="#">Cebu City</option>
-                                    <option value="#">Davao City</option>
-                                    <option value="#">Iloilo City</option>
-                                    <option value="#">Mandaue City</option>
-                                    <option value="#">Iloilo City</option>
-                                </select>  
-                            </div>
-                            <button type="button" class="btn btn-secondary">Search</button>  
-                        </div>
-                    </div>
-                </div>  -->
+                
             </div>
-            <div id="articlesTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+            <div id="articlesTab" class="tabDataContentContainer" style="height: 30vw; overflow: auto;">
                 
                 <div class="tabDataContent">
                     <div class="col-md-12 downloadinfo">
@@ -350,7 +366,7 @@
                 </div>
 
             </div>
-            <div id="mapsTab" class="tabDataContentContainer" style="height: 30vw; overflow: scroll;">
+            <div id="mapsTab" class="tabDataContentContainer" style="height: 30vw; overflow: auto;">
             
                 <div class="tabDataContent">
                     <div class="downloadinfo">
