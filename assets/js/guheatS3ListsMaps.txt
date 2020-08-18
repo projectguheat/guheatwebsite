@@ -1,0 +1,115 @@
+2020-08-13 05:21:06          0 data/maps/
+2020-08-13 08:51:49          0 data/maps/baguiocity/
+2020-08-13 08:53:01   44612265 data/maps/baguiocity/guheatMapBuiltUpExpansionBaguio2019.png
+2020-08-13 08:53:01    9021192 data/maps/baguiocity/guheatMapENVImetPATBaguioLowerSession20191212Scenario1DiffScenario2.png
+2020-08-13 08:53:00    6647312 data/maps/baguiocity/guheatMapENVImetPATBaguioLowerSession20191212Scenario1DiffScenario3.png
+2020-08-13 08:53:01    8059633 data/maps/baguiocity/guheatMapENVImetPATBaguioLowerSession20191212T0900Scenario1.png
+2020-08-13 08:53:00    7991504 data/maps/baguiocity/guheatMapENVImetPATBaguioLowerSession20191212T1300Scenario1.png
+2020-08-13 08:53:00    7908318 data/maps/baguiocity/guheatMapENVImetPATBaguioLowerSession20191212T1500Scenario1.png
+2020-08-13 08:53:00    6647152 data/maps/baguiocity/guheatMapENVImetPATBaguioUpperSession20191212Scenario1DiffScenario2.png
+2020-08-13 08:56:44    2553588 data/maps/baguiocity/guheatMapLSTTimeSeriesBaguio2019.png
+2020-08-13 08:51:55          0 data/maps/cebucity/
+2020-08-13 08:53:21    8887022 data/maps/cebucity/guheatMapENVImetPATCebuCityFuenteOsmeña2190421_1PM.png
+2020-08-13 08:53:21    8873778 data/maps/cebucity/guheatMapENVImetPATCebuCityFuenteOsmeña2190421_5PM.png
+2020-08-13 08:53:21    8898117 data/maps/cebucity/guheatMapENVImetPATCebuCityFuenteOsmeña2190421_9AM.png
+2020-08-13 08:53:21    9534540 data/maps/cebucity/guheatMapENVImetPATCebuCityITPark2190421_0900.png
+2020-08-13 08:53:21    9532771 data/maps/cebucity/guheatMapENVImetPATCebuCityITPark2190421_1300.png
+2020-08-13 08:53:21    9531724 data/maps/cebucity/guheatMapENVImetPATCebuCityITPark2190421_1700.png
+2020-08-13 08:56:17    8623892 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityFuenteOsmeña2190421_1PMScene2-Scene1.png
+2020-08-13 08:56:17    8621186 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityFuenteOsmeña2190421_1PM_Scene3-Scene1.png
+2020-08-13 08:56:17    8608757 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityFuenteOsmeña2190421_5PM_Scene2-Scene1.png
+2020-08-13 08:56:17    8613581 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityFuenteOsmeña2190421_5PM_Scene3-Scene1.png
+2020-08-13 08:56:17    8619553 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityFuenteOsmeña2190421_9AM_Scene2-Scene1.png
+2020-08-13 08:56:17    8624398 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityFuenteOsmeña2190421_9AM_Scene3-Scene1.png
+2020-08-13 08:56:17   10193692 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityITPark2190421_1PM_Scene2-Scene1.png
+2020-08-13 08:56:17   10188595 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityITPark2190421_1PM_Scene3-Scene1.png
+2020-08-13 08:56:17   10189363 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityITPark2190421_5PM_Scene2-Scene1.png
+2020-08-13 08:56:17   10180560 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityITPark2190421_5PM_Scene3-Scene1.png
+2020-08-13 08:56:17   10194327 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityITPark2190421_9AM_Scene2-Scene1.png
+2020-08-13 08:56:17   10186332 data/maps/cebucity/guheatMapENVImetPATDiffCebuCityITPark2190421_9AM_Scene3-Scene1.png
+2020-08-13 08:52:00          0 data/maps/davaocity/
+2020-08-13 08:53:47    2261226 data/maps/davaocity/guheatMapENVImetPATDavaoCityHall20190415Scenario1DiffScenario2.png
+2020-08-13 08:53:47    2205263 data/maps/davaocity/guheatMapENVImetPATDavaoCityHall20190415Scenario1DiffScenario3.png
+2020-08-13 08:53:47    2232519 data/maps/davaocity/guheatMapENVImetPATDavaoCityHall20190415Scenario1DiffScenario4.png
+2020-08-13 08:53:47   44262851 data/maps/davaocity/guheatMapENVImetPATDavaoCityHall20190415T0900Scenario1.png
+2020-08-13 08:53:47   44256118 data/maps/davaocity/guheatMapENVImetPATDavaoCityHall20190415T1300Scenario1.png
+2020-08-13 08:53:47   44288168 data/maps/davaocity/guheatMapENVImetPATDavaoCityHall20190415T1700Scenario1.png
+2020-08-13 08:53:47    2484469 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea120200130Scenario1DiffScenario2.png
+2020-08-13 08:53:47    2892619 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea120200130Scenario1DiffScenario3.png
+2020-08-13 08:53:47   43877591 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea120200130T0900Scenario1.png
+2020-08-13 08:53:47   43861868 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea120200130T1300Scenario1.png
+2020-08-13 08:53:47   43870869 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea120200130T1700Scenario1.png
+2020-08-13 08:53:47    2588545 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea220200130Scenario1DiffScenario2.png
+2020-08-13 08:53:47    3101307 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea220200130Scenario1DiffScenario3.png
+2020-08-13 08:53:47   54090429 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea220200130T0900Scenario1.png
+2020-08-13 08:53:47   54087160 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea220200130T1300Scenario1.png
+2020-08-13 08:53:47   54109054 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea220200130T1700Scenario1.png
+2020-08-13 08:53:47    2655050 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea320200130Scenario1DiffScenario2..png
+2020-08-13 08:53:47    2863033 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea320200130Scenario1DiffScenario3.png
+2020-08-13 08:53:47   50250235 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea320200130T0900Scenario1.png
+2020-08-13 08:53:47   50247691 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea320200130T1300Scenario1.png
+2020-08-13 08:53:47   50270695 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea320200130T1700Scenario1.png
+2020-08-13 08:53:47    1736340 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea420200130Scenario1DiffScenario2.png
+2020-08-13 08:53:47    1959906 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea420200130Scenario1DiffScenario3.png
+2020-08-13 08:53:47   45549959 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea420200130T0900Scenario1.png
+2020-08-13 08:53:47   45537272 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea420200130T1300Scenario1.png
+2020-08-13 08:53:47   45576131 data/maps/davaocity/guheatMapENVImetPATDavaoClaveriaSubarea420200130T1700Scenario1.png
+2020-08-13 08:56:31   24530698 data/maps/davaocity/guheatMapLSTHiResTimeSeriesDavao2019-2020.png
+2020-08-13 10:29:36          0 data/maps/iloilocity/
+2020-08-13 10:29:54     377428 data/maps/iloilocity/guheatMapENVImetPATIloiloCalleReal20200305Scenario1DiffScenario2.png
+2020-08-13 23:05:38     377428 data/maps/iloilocity/guheatMapENVImetPATIloiloCalleReal20200305ScenarioDifference.png
+2020-08-13 10:29:54    3705882 data/maps/iloilocity/guheatMapENVImetPATIloiloCalleReal20200305T0900Scenario1.png
+2020-08-13 10:29:54    3702396 data/maps/iloilocity/guheatMapENVImetPATIloiloCalleReal20200305T1300Scenario1.png
+2020-08-13 10:29:54    3702559 data/maps/iloilocity/guheatMapENVImetPATIloiloCalleReal20200305T1700Scenario1.png
+2020-08-13 10:29:54    3697819 data/maps/iloilocity/guheatMapENVImetPATIloiloCalleReal20200305T2100Scenario1.png
+2020-08-13 23:05:38     515430 data/maps/iloilocity/guheatMapENVImetPATIloiloEastIloiloEsplanade20200305ScenarioDifference.png
+2020-08-13 10:29:54    3500295 data/maps/iloilocity/guheatMapENVImetPATIloiloEsplanadeEast20200309T0900Scenario1.png
+2020-08-13 10:29:54    3502278 data/maps/iloilocity/guheatMapENVImetPATIloiloEsplanadeEast20200309T1300Scenario1.png
+2020-08-13 10:29:54    3454377 data/maps/iloilocity/guheatMapENVImetPATIloiloEsplanadeEast20200309T1700Scenario1.png
+2020-08-13 10:29:54    3455860 data/maps/iloilocity/guheatMapENVImetPATIloiloEsplanadeEast20200309T2100Scenario1.png
+2020-08-13 10:29:54    4013955 data/maps/iloilocity/guheatMapENVImetPATIloiloEsplanadeWest20200309T0900Scenario1.png
+2020-08-13 10:29:54    4001067 data/maps/iloilocity/guheatMapENVImetPATIloiloEsplanadeWest20200309T1300Scenario1.png
+2020-08-13 10:29:54    3953734 data/maps/iloilocity/guheatMapENVImetPATIloiloEsplanadeWest20200309T1700Scenario1.png
+2020-08-13 10:29:54    4007452 data/maps/iloilocity/guheatMapENVImetPATIloiloEsplanadeWest20200309T2100Scenario1.png
+2020-08-13 23:05:38     522534 data/maps/iloilocity/guheatMapENVImetPATIloiloWestIloiloEsplanade20200305ScenarioDifference.png
+2020-08-13 10:29:54     241967 data/maps/iloilocity/guheatMapHeatRiskIloilo2019.png
+2020-08-13 10:29:54    5127428 data/maps/iloilocity/guheatMapLSTHiResIloilo2019.png
+2020-08-13 23:06:55    7322552 data/maps/iloilocity/guheatMapLSTTimeSeriesIloilo2019.png
+2020-08-13 08:52:22          0 data/maps/mandauecity/
+2020-08-13 08:54:46    4070939 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T1300- Scenario 1.png
+2020-08-13 08:54:46    4069045 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T1300- Scenario 2.png
+2020-08-13 08:54:46    4068223 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T1300- Scenario 3.png
+2020-08-13 08:54:46    4071048 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T1700- Scenario 1.png
+2020-08-13 08:54:46    4065419 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T1700- Scenario 2.png
+2020-08-13 08:54:46    4061931 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T1700- Scenario 3.png
+2020-08-13 08:54:46    4076228 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T900- Scenario 1.png
+2020-08-13 08:54:46    4071902 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T900- Scenario 2.png
+2020-08-13 08:54:46    4073713 data/maps/mandauecity/guheatMapENVImetPATMCBriones20190926T900- Scenario 3.png
+2020-08-13 08:54:46     174427 data/maps/mandauecity/guheatMapENVImetPATMandaueMCBrioes20190926Scenario1DiffScenario2.jpg
+2020-08-13 08:54:46     175317 data/maps/mandauecity/guheatMapENVImetPATMandaueMCBrioes20190926Scenario1DiffScenario3.jpg
+2020-08-13 08:54:46    4030842 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T1300- Scenario 1 (2).png
+2020-08-13 08:54:46    4005454 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T1300- Scenario 2.png
+2020-08-13 08:54:46    3994199 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T1300- Scenario 3.png
+2020-08-13 08:54:46    4068144 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T1700- Scenario 1.png
+2020-08-13 08:54:46    4077387 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T1700- Scenario 2.png
+2020-08-13 08:54:46    4059846 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T1700- Scenario 3.png
+2020-08-13 08:54:46    4067355 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T900- Scenario 1 (2).png
+2020-08-13 08:54:46    4080783 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T900- Scenario 2.png
+2020-08-13 08:54:46    4067035 data/maps/mandauecity/guheatMapENVImetSTMCBriones20190926T900- Scenario 3.png
+2020-08-13 08:52:28          0 data/maps/quezoncity/
+2020-08-13 19:59:53     656783 data/maps/quezoncity/guheatMapENVImetPATQCTimog20191128Scenario1DiffScenario3.png
+2020-08-13 19:59:52   17208814 data/maps/quezoncity/guheatMapENVImetPATQCTimog20191128T0900Scenario1.png
+2020-08-13 19:59:53   17205783 data/maps/quezoncity/guheatMapENVImetPATQCTimog20191128T1300Scenario1.png
+2020-08-13 19:59:54   17190406 data/maps/quezoncity/guheatMapENVImetPATQCTimog20191128T1700Scenario1.png
+2020-08-13 19:59:25     687444 data/maps/quezoncity/guheatMapENVImetPATQCVisayasNorth20191128Scenario1DiffScenario2.png
+2020-08-13 19:59:24   18238380 data/maps/quezoncity/guheatMapENVImetPATQCVisayasNorth20191128T0900Scenario1.png
+2020-08-13 19:59:24   18237475 data/maps/quezoncity/guheatMapENVImetPATQCVisayasNorth20191128T1300Scenario1.png
+2020-08-13 19:59:24   18233413 data/maps/quezoncity/guheatMapENVImetPATQCVisayasNorth20191128T1700Scenario1.png
+2020-08-13 19:59:25     710235 data/maps/quezoncity/guheatMapENVImetPATQCVisayasSouth20191128Scenario1DiffScenario2.png
+2020-08-13 19:59:43   15711463 data/maps/quezoncity/guheatMapENVImetPATQCVisayasSouth20191128T0900Scenario1.png
+2020-08-13 19:59:36   15718569 data/maps/quezoncity/guheatMapENVImetPATQCVisayasSouth20191128T1300Scenario1.png
+2020-08-13 19:59:58   15702507 data/maps/quezoncity/guheatMapENVImetPATQCVisayasSouth20191128T1700Scenario1.png
+2020-08-13 08:52:32          0 data/maps/zamboangacity/
+
+Total Objects: 112
+   Total Size: 1315303168
